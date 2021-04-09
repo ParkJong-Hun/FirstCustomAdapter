@@ -14,8 +14,8 @@ import android.widget.TextView;
 public class MyListAdapter extends BaseAdapter {
     Context context;
     String[] title;
-    public MyListAdapter(Context _context) {
-        context = _context; title = ((MainActivity)context).mid;
+    public MyListAdapter(Context context, String text1[]) {
+        this.context = context; title = text1;
     }
     @Override
     public int getCount() {
